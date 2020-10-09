@@ -8,7 +8,7 @@ const findMatching = (drivers, string) => {
 // fuzzyMatch
 const fuzzyMatch = (drivers, string) => {
   return drivers.filter(name => 
-    
+    name.charAt(0) === string.charAt(0)
   )
 }
 
